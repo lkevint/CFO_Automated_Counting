@@ -49,7 +49,7 @@ class Counter:
 
     #load CRNN model
     def loadCRNN(self):
-        crnn = cv2.dnn.TextRecognitionModel('crnn.onnx')
+        crnn = cv2.dnn.TextRecognitionModel('resources/crnn.onnx')
         crnn.setDecodeType("CTC-greedy")
         alphabet = '0123456789'
         crnn.setVocabulary(alphabet)

@@ -30,7 +30,7 @@ class Renderer:
                 text = str(left_info[0]) + ' - ' + str(right_info[0])
 
                 frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-                fontpath = 'akira_expanded.otf'
+                fontpath = 'resources/akira_expanded.otf'
                 font = ImageFont.truetype(fontpath, 70)
                 pil_image = Image.fromarray(frame)
                 draw_txt = ImageDraw.Draw(pil_image)
