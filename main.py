@@ -59,6 +59,8 @@ def get_bonuses(side, start_time):
 Example: 4.366, 69.420, 122.5\n')
     while True:
         try:
+            if not bonus:
+                break
             for elem in bonus.split(','):
                 bonuses.append([15, float(elem) - start_time])
             break
